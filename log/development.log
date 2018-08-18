@@ -1071,3 +1071,421 @@ Processing by IdeasController#index as HTML
 Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 61.68.35.10 at 2018-08-18 03:43:59 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started GET "/ideas" for 61.68.35.10 at 2018-08-18 03:44:00 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:5
+  Rendered ideas/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 432ms (Views: 404.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/uploads/idea/picture/1/thumb_picture.jpg" for 61.68.35.10 at 2018-08-18 03:44:01 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/1/thumb_picture.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/uploads/idea/picture/3/thumb_face.jpg" for 61.68.35.10 at 2018-08-18 03:44:02 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/3/thumb_face.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ideas/1" for 61.68.35.10 at 2018-08-18 03:44:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 89ms (Views: 67.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/uploads/idea/picture/1/thumb_picture.jpg" for 61.68.35.10 at 2018-08-18 03:44:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/1/thumb_picture.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/uploads/idea/picture/3/thumb_face.jpg" for 61.68.35.10 at 2018-08-18 03:44:11 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/3/thumb_face.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ideas/1/edit" for 61.68.35.10 at 2018-08-18 03:44:14 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (10.8ms)
+  Rendered ideas/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/ideas/1" for 61.68.35.10 at 2018-08-18 03:44:25 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8pGCk97yw9YSiPlEfLK+mM9nOXnPL4R1001ygWYlPfYIBOOESCbOHgO93I2Oumtba91uoneFC1Cl9agXGcBAfA==", "idea"=>{"name"=>"Idea 1", "description"=>"First Idea Description", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007ff7581b5808 @tempfile=#<Tempfile:/tmp/RackMultipart20180818-35102-1hfp2tg.jpg>, @original_filename="picture.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"picture.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[36mIdea Update (0.5ms)[0m  [1m[33mUPDATE "ideas" SET "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["picture", "picture.jpg"], ["updated_at", "2018-08-18 03:44:25.375503"], ["id", 1]]
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+Redirected to https://railsgirls-madelyne.c9users.io/ideas/1
+Completed 302 Found in 228ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/ideas/1" for 61.68.35.10 at 2018-08-18 03:44:25 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2018-08-18 03:44:28 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:5
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/uploads/idea/picture/3/thumb_face.jpg" for 61.68.35.10 at 2018-08-18 03:44:29 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/3/thumb_face.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ideas/3" for 61.68.35.10 at 2018-08-18 03:44:31 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/uploads/idea/picture/3/thumb_face.jpg" for 61.68.35.10 at 2018-08-18 03:44:31 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/3/thumb_face.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ideas/3/edit" for 61.68.35.10 at 2018-08-18 03:44:33 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (2.9ms)
+  Rendered ideas/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/ideas/3" for 61.68.35.10 at 2018-08-18 03:44:41 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PHZyr1TuTAhMLchJWshNi0VsiY3pfcBmULajo+NChCNMjVOMskJNAaBqUsHG9Kncdx0WTlo7xsfonGa/18mfig==", "idea"=>{"name"=>"Idea 3", "description"=>"Description updated", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007ff76073d200 @tempfile=#<Tempfile:/tmp/RackMultipart20180818-35102-o46f9r.jpg>, @original_filename="face.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"face.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[36mIdea Update (0.4ms)[0m  [1m[33mUPDATE "ideas" SET "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["picture", "face.jpg"], ["updated_at", "2018-08-18 03:44:41.715134"], ["id", 3]]
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+Redirected to https://railsgirls-madelyne.c9users.io/ideas/3
+Completed 302 Found in 103ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/ideas/3" for 61.68.35.10 at 2018-08-18 03:44:41 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2018-08-18 03:44:44 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:5
+  Rendered ideas/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas/2" for 61.68.35.10 at 2018-08-18 03:44:49 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/2/edit" for 61.68.35.10 at 2018-08-18 03:44:51 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.8ms)
+  Rendered ideas/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/ideas/2" for 61.68.35.10 at 2018-08-18 03:45:02 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oZWpGPFs+tQWpJo+9W3gzLsg2XE1dF0c9LMEpltUPNx3TZh8gIgrkfSvtRLW8nZOx/YkoTGLKaxzZdrq1wAOLQ==", "idea"=>{"name"=>"Idea 2", "description"=>"Test idea 2 description", "picture"=>#<ActionDispatch::Http::UploadedFile:0x00000001ab25b0 @tempfile=#<Tempfile:/tmp/RackMultipart20180818-35102-12nefey.jpg>, @original_filename="Purple-wallpaper-10.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"Purple-wallpaper-10.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Idea", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[36mIdea Update (0.6ms)[0m  [1m[33mUPDATE "ideas" SET "picture" = ?, "updated_at" = ? WHERE "ideas"."id" = ?[0m  [["picture", "Purple-wallpaper-10.jpg"], ["updated_at", "2018-08-18 03:45:02.714212"], ["id", 2]]
+  ↳ app/controllers/ideas_controller.rb:46
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ideas_controller.rb:46
+Redirected to https://railsgirls-madelyne.c9users.io/ideas/2
+Completed 302 Found in 482ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/ideas/2" for 61.68.35.10 at 2018-08-18 03:45:03 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:69
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 39.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas" for 61.68.35.10 at 2018-08-18 03:45:23 +0000
+Cannot render console from 61.68.35.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/gems/ruby-2.3.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:5
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
